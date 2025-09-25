@@ -1,1 +1,1 @@
-Allow the collaborator urls
+Allow collaborator URLs
