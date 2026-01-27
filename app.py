@@ -4,4 +4,9 @@ def get_user(name):
 
 def hash_pass(pwd):
     import hashlib
-    return hashlib.md5(pwd.encode()).hexdigest()
+    return hashlib.sha1(pwd.encode()).hexdigest()
+
+def validate_user(username):
+    # No input validation - injection risk
+    os.system(f"grep {username} /etc/passwd")
+    return True
